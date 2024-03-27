@@ -17,7 +17,7 @@ console.log(`Starting with time: ${seconds_to_grab_data} & country: ${country}`)
 
 getCountryList(country, seconds_to_grab_data, process.argv[2])
     .then(list => {
-        var lowest_follower_amount = 100 * 100;
+        var lowest_follower_amount = 1 * 1;
         list.list.forEach(s => {
             if (s.followers.totalCount < lowest_follower_amount) { lowest_follower_amount = s.followers.totalCount };
         })
