@@ -15,7 +15,7 @@ if (process.argv[4]) {
 
 console.log(`Starting with time: ${seconds_to_grab_data} & country: ${country}`)
 
-getCountryList(country, seconds_to_grab_data, process.argv[2])
+getCountryList(uganda, 2000, process.argv[2])
     .then(list => {
         var lowest_follower_amount = 1 * 1;
         list.list.forEach(s => {
